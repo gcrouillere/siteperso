@@ -1,1 +1,375 @@
-// Specific CSS for your home-page
+.services-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  top: 0;
+  @media all and (min-width: 768px) {
+    padding-top: 60px;
+  }
+  @media all and (max-width: 576px) {
+    flex-direction: column;
+  }
+  .main-header {
+    z-index: 2;
+    width: 34%;
+    padding: 0 50px;
+    @media all and (min-width: 768px) {
+      min-height: calc(100vh - 100px);
+    }
+    margin-bottom: 50px;
+    @media all and (max-width: 576px) {
+     width: 100%;
+    }
+    @media all and (max-width: 768px) {
+     padding: 0 20px;
+    }
+    h1 {
+      font-weight: 900;
+      margin: 50px auto 30px auto;
+      width: 270px;
+      @media all and (max-width: 1000px) {
+       font-size: 35px;
+       margin: 35px 0 30px 0;
+      }
+      @media all and (max-width: 1000px) and (min-width: 768px){
+        width: 210px;
+      }
+      @media all and (max-width: 767px) and (min-width: 576px){
+        width: 34%;
+      }
+      @media all and (max-width: 576px) {
+       font-size: 36px;
+       margin: 35px auto 35px auto;
+      }
+    }
+    p {
+      margin: 0 auto 20px auto;
+      width: 270px;
+      @media all and (max-width: 1000px) {
+       font-size: 15px;
+       margin: 0 0 30px 0;
+      }
+      @media all and (max-width: 1000px) and (min-width: 768px){
+        width: 210px;
+      }
+      @media all and (max-width: 767px) and (min-width: 576px){
+        width: 34%;
+      }
+      @media all and (max-width: 576px) {
+       margin: 0 auto 40px auto;
+       width: auto;
+      }
+    }
+    em {
+      font-weight: 300;
+      color: #e84545;
+      @media all and (max-width: 768px) and (min-width: 576px){
+        font-size: 28px;
+      }
+    }
+    .dot {
+      color: #e84545;
+      font-size: 60px;
+      margin-top: -11px;
+      @media all and (max-width: 1000px) {
+       margin-top: -22px;
+      }
+      position: absolute;
+    }
+    a {
+      color: #2b2e4a;
+      text-decoration: none;
+    }
+  }
+  .header-text {
+    @media all and (min-width: 577px) {
+      position: fixed;
+      left: 11%;
+    }
+    @media all and (max-width: 768px) and (min-width: 577px){
+       position: fixed;
+       left: 7%;
+    }
+  }
+  .services-box {
+    width: 66%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    @media all and (max-width: 576px) {
+     width: 100%;
+    }
+    .empty-sm {
+      width: 100%;
+      height: 70px;
+    }
+    .services {
+      width: 90%;
+      height: 85%;
+      @media all and (max-width: 768px) {
+        height: auto;
+        padding: 0 0 20px 0;
+      }
+      @media all and (max-width: 576px) {
+        width: 100%;
+      }
+      margin: 0;
+      background: #1c1b20;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 0px;
+      .apps, .show {
+        margin-top: 30px;
+      }
+      @media all and (max-width: 768px) {
+        .ecommerce, .training, .apps, .show {
+         margin: 20px 0 0px 0;
+       }
+      }
+      h2 {
+        font-size: 21px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: white;
+      }
+      p {
+        text-align: center;
+        color : #73717c;
+      }
+      .ecommerce:before, .show:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: calc(50% - 32px);
+        height: 59px;
+        border-right: 1px solid #73717c;
+      }
+      .training:before, .apps:before {
+        @media all and (max-width: 767px) {
+          content: "";
+          position: absolute;
+          right: calc(50% - 30px);
+          top: 0px;
+          width: 59px;
+          border-bottom: 1px solid #73717c;
+        }
+      }
+      .training:after {
+        @media all and (max-width: 767px) {
+          content: "";
+          position: absolute;
+          right: calc(50% - 30px);
+          bottom: -16px;
+          width: 59px;
+          border-bottom: 1px solid #73717c;
+        }
+      }
+    }
+  }
+}
+
+.slide-2-container, .slide-3-container, .slide-4-container, .slide-5-container {
+  display: flex;
+  width: 100%;
+  @media all and (min-width: 768px) {
+    min-height: calc(100vh - 40px);
+  }
+  position: relative;
+  top: 0;
+  @media all and (max-width: 576px) {
+    flex-direction: column;
+  }
+  .main-header {
+    width: 34%;
+    padding: 0 50px;
+    min-height: calc(100vh - 100px);
+    @media all and (max-width: 576px) {
+     display: none;
+    }
+    @media all and (max-width: 768px) {
+     padding: 0 20px;
+    }
+  }
+  .services-box {
+    width: 66%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    @media all and (max-width: 576px) {
+     width: 100%;
+    }
+    .empty-sm {
+      width: 100%;
+      height: 70px;
+    }
+    .services {
+      width: 90%;
+      height: 100%;
+      @media all and (max-width: 768px) {
+        height: auto;
+      }
+      @media all and (max-width: 576px) {
+        width: 100%;
+        padding: 20px 30px;
+      }
+      margin: 0;
+      color: white;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      h2 {
+        text-shadow: 0px 2px 0px rgba(0,0,0,0.15);
+        color: white;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        margin: 30px 0;
+        img {
+          width: 30px;
+        }
+        .mail-link {
+          margin: 0 20px;
+          img {
+            width: 32px;
+          }
+        }
+        a {
+          text-decoration: none;
+          border-bottom: none;
+          &:hover {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slide-2-container {
+  .services {
+    background: #60999b;
+    background-image: linear-gradient(135deg, rgba(96, 153, 155, 0.96), rgba(96, 153, 155, 0.87)), url('pattern-e-commerce.svg');
+  }
+}
+.slide-3-container {
+  .services {
+    background: #82a1b2;
+    background-image: linear-gradient(135deg, rgba(130, 161, 178, 0.96), rgba(130, 161, 178, 0.87)), url('pattern-training.svg');
+  }
+}
+.slide-4-container {
+  .services {
+    background: #2e5b77;
+    background-image: linear-gradient(135deg, rgba(46, 91, 119, 0.96), rgba(46, 91, 119, 0.87)), url('pattern-show.svg');
+  }
+}
+.slide-5-container {
+  .services {
+    background: #1C1B20;
+    background-image: linear-gradient(135deg, rgba(28, 27, 32, 0.96), rgba(28, 27, 32, 0.87)), url('pattern-app.svg');
+  }
+}
+
+// Card-link
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+// LINKS ANIMATIONS
+
+@media all and (min-width: 1000px) {
+  // Services box link
+  .link-animation {
+    &:hover {
+      text-shadow: 1px 1px #e84545;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0px;
+      right: 0px;
+      height: 2px;
+      overflow: hidden;
+      background: white;
+      transform-origin: bottom left;
+      transition: transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+      z-index: 0;
+      width: 100%;
+    }
+    &:hover:after {
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition-duration: 400ms;
+    }
+  }
+
+  // Main link
+  .get-in-touch:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    right: 0px;
+    height: 2px;
+    overflow: hidden;
+    background: #2b2e4a;
+    transform-origin: bottom left;
+    transition: transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+    z-index: 0;
+    width: 76%;
+  }
+
+  .get-in-touch:hover:after {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition-duration: 400ms;
+  }
+
+  .get-in-touch:before {
+    content: '';
+    width: 79%;
+    background: #2b2e4a;
+    bottom: 7px;
+    height: 7px;
+    opacity: 0.4;
+    left: -5px;
+    right: -5px;
+    position: absolute;
+    overflow: hidden;
+    transform-origin: bottom left;
+    transition: transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+    z-index: 0;
+
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition-duration: 400ms;
+  }
+
+  .get-in-touch:hover:before {
+    background: #2b2e4a;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+@media all and (max-width: 999px) {
+  .get-in-touch {
+    border-bottom: 1px solid #2b2e4a;
+  }
+  .link-animation {
+    border-bottom: 1px solid white;
+  }
+}

@@ -1,0 +1,39 @@
+  @media all and (max-width: 768px) {
+    .scrolldown {
+      display: none;
+    }
+  }
+
+  .scrolldown {
+    opacity: 1;
+    transform: rotate(-90deg) translateY(-60px);
+    z-index: 9;
+    line-height: 0;
+    pointer-events: none;
+    transition: transform 1000ms cubic-bezier(0.7, 0, 0.3, 1) 0ms, opacity 250ms linear 0ms;
+    position: absolute;
+    bottom: 76px;
+    left: 41%;
+  }
+  .arrow {
+    animation: bounce 800ms cubic-bezier(0.7, 0, 0.3, 1) infinite alternate;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+  }
+  .txt {
+    font-weight: 700;
+    height: 1px;
+    font-size: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  @keyframes bounce {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 8px;
+    }
+}
