@@ -8,7 +8,7 @@
       <% end %>
     </div>
   </div>
-  <div class="services-box box-slide">
+  <div class="services-box">
     <div class="empty-sm hidden-lg hidden-md hidden-xs"></div>
     <div class="services">
       <div class="ecommerce col-xs-12 col-sm-6">
@@ -46,7 +46,8 @@
     </div>
   </div>
 </div>
-<div id="ecommerce" class="slide-2-container box-slide">
+<div class="slide-2-container">
+  <div class="link-level" id="ecommerce"></div>
   <div class="main-header">
   </div>
   <div class="services-box">
@@ -66,7 +67,8 @@
     </div>
   </div>
 </div>
-<div id="training" class="slide-3-container box-slide">
+<div class="slide-3-container">
+  <div class="link-level" id="training"></div>
   <div class="main-header">
   </div>
   <div class="services-box">
@@ -85,7 +87,8 @@
     </div>
   </div>
 </div>
-<div id="show" class="slide-4-container box-slide">
+<div class="slide-4-container">
+  <div class="link-level" id="show"></div>
   <div class="main-header">
   </div>
   <div class="services-box">
@@ -102,7 +105,8 @@
     </div>
   </div>
 </div>
-<div id="app" class="slide-5-container box-slide">
+<div class="slide-5-container">
+  <div class="link-level" id="app"></div>
   <div class="main-header">
   </div>
   <div class="services-box">
@@ -114,13 +118,22 @@
       <p>Toujours prêt à découvrir de nouveaux outils et environnements.</p>
       <div class="links">
         <%= link_to "https://www.linkedin.com/in/gcrouillerewebdeveloper", target: "blank" do %>
-         <%= image_tag  "linkedin.svg"%>
+          <div class="hover-management-linkedin">
+            <%= image_tag  "linkedin.svg", class: "link-before-linkedin"%>
+            <%= image_tag  "linkedin-red.svg", class: "link-after-linkedin"%>
+          </div>
         <% end %>
         <%= link_to "mailto:hello@guillaumecrouillere.fr", target: "blank", class: "mail-link" do %>
-         <%= image_tag  "mail.svg"%>
+          <div class="hover-management-mail">
+             <%= image_tag  "mail.svg", class: "link-before-mail"%>
+             <%= image_tag  "mail-red.svg", class: "link-after-mail"%>
+           </div>
         <% end %>
         <%= link_to "https://github.com/gcrouillere", target: "blank" do %>
-         <%= image_tag  "github.svg"%>
+          <div class="hover-management-github">
+            <%= image_tag  "github.svg", class: "link-before-github"%>
+            <%= image_tag  "github-red.svg", class: "link-after-github"%>
+          </div>
         <% end %>
       </div>
     </div>

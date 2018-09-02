@@ -1,0 +1,35 @@
+.links {
+   .link-after-linkedin {
+    display: none;
+  }
+  .hover-management-linkedin:hover {
+   .link-after-linkedin {
+      display: inline-block;
+    }
+   .link-before-linkedin {
+      display: none;
+    }
+  }
+   .link-after-mail {
+    display: none;
+  }
+  .hover-management-mail:hover {
+   .link-after-mail {
+      display: inline-block;
+    }
+   .link-before-mail {
+      display: none;
+    }
+  }
+  .link-after-github {
+    display: none;
+  }
+  .hover-management-github:hover {
+   .link-after-github {
+      display: inline-block;
+    }
+   .link-before-github {
+      display: none;
+    }
+  }
+}
