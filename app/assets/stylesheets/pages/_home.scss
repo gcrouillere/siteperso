@@ -82,11 +82,11 @@
     }
   }
   .header-text {
-    @media all and (min-width: 577px) {
+    @media all and (min-width: 577px) and (min-height: 510px) {
       position: fixed;
       left: 11%;
     }
-    @media all and (max-width: 768px) and (min-width: 577px){
+    @media all and (max-width: 768px) and (min-width: 577px) and (min-height: 510px) {
        position: fixed;
        left: 7%;
     }
