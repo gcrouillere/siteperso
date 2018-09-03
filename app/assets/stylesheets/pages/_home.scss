@@ -13,9 +13,6 @@
     z-index: 2;
     width: 34%;
     padding: 0 50px;
-    @media all and (min-width: 768px) {
-      min-height: calc(100vh - 100px);
-    }
     margin-bottom: 50px;
     @media all and (max-width: 576px) {
      width: 100%;
@@ -106,7 +103,6 @@
     }
     .services {
       width: 90%;
-      height: 85%;
       @media all and (max-width: 768px) {
         height: auto;
         padding: 0 0 20px 0;
@@ -175,9 +171,6 @@
   width: 100%;
   position: relative;
   top: 0;
-  @media all and (min-width: 768px) {
-    min-height: calc(100vh - 40px);
-  }
   @media all and (max-width: 576px) {
     flex-direction: column;
   }
@@ -189,7 +182,6 @@
   .main-header {
     width: 34%;
     padding: 0 50px;
-    min-height: calc(100vh - 100px);
     @media all and (max-width: 576px) {
      display: none;
     }
