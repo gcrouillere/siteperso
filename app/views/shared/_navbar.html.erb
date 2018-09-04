@@ -1,4 +1,18 @@
 <header class="header">
   <%= render 'shared/logo' %>
-  <div class="bibi"><span class="blaze">Guillaume Crouillère.</span><span class="job">Développeur Web.</span> </div>
+  <div class="bibi">
+    <span class="blaze">Guillaume Crouillère.</span><span class="job"><%= t(:job)%>.</span>
+  </div>
+  <div class="language">
+    <span class="<%= I18n.locale == :fr ? "current" : "clickable" %>">
+      <%= link_to params.merge(locale: "fr", change: true).permit(:locale, :change) do %>
+        FR.
+      <% end %>
+    </span>
+    <span class="<%= I18n.locale == :en ? "current" : "clickable" %>">
+      <%= link_to params.merge(locale: "en", change: true).permit(:locale, :change) do %>
+        EN.
+      <% end %>
+    </span>
+  </div>
 </header>

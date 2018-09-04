@@ -1,33 +1,41 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  job: "Web Developer"
+  main_teaser_html: "Let me guide you and <em>develop</em> all your web projects"
+  second_teaser: "Both web developer and training provider, I have all tools to manage your web project."
+  brief: "Tell me about your project"
+  dedicated_app: "Dedicated application"
+  deploy: "Fast deployment"
+  custom_or_standard: "Custom or standard"
+  training: "Training"
+  seo: "SEO"
+  showcase: "Showcase site"
+  corporation: "Corporation"
+  event: "Event"
+  web_app: "Web application"
+  thanks_to_ecommerce: "I create your personalized e-shop, thanks to my e-commerce application. It was developed specially towards craftsmen or small businesses."
+  this_application: "This online store application has been developed for ease of use, for you and your customers."
+  benefits: "This e-commerce application's benefits: "
+  admin: "Easy administration"
+  payment: "Payment by cards and Paypal"
+  secured: "Secured payments"
+  custom: "Customizable"
+  responsive: "Responsive"
+  discover: "Discover this application's features and some implemenation examples on the"
+  link_content: "dedicated website."
+  training_intro: "I can train you at your office or mine. This training will let you create a professional website with Wordpress. During 4 days, you will learn the princples that will guide you to the creation of a personalized site. Your site is designed for SEO and responsive."
+  program: "Training programm: "
+  day_1: "Day 1 - Wordpress"
+  day_2: "Day 2 - SEO"
+  day_3: "Day 3 - HTML & CSS"
+  day_4: "Day 4 - CSS"
+  training_details: "Training is practice-oriented. Several exercizes come with each chapter. Thus you use all concepts as and when they are taught. These exercizes will make you create a demo site which will be a complete base reference during your final site creation."
+  looking_for: "You are looking a for unique showcase site, in order to enhance your image, your product offer or an event ?"
+  from_landing_page: "From landing page to your company's showcase, let's create a custom website that will mark your customers."
+  implementation: "Check out some implementations:"
+  hr_link: "contemporary ceramics."
+  ty_link: "pieces of art in Morta."
+  sun_link: "unique purses."
+  looking_for_dev: "You are looking for a freelance, a collaborator, or an associate for a web project ?"
+  lets_chat: "let's chat !"
+  stack: "My current stack is: Ruby on Rails, Postgresql, SCSS, Javascript, Github and Heroku."
+  ready: "Always ready to discover new tools and environment."

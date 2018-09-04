@@ -34,4 +34,19 @@ header {
       font-size: 12px;
     }
   }
+  .language {
+    position: absolute;
+    right: 0px;
+    span a {
+        font-size: 12px;
+        font-weight: 900;
+        margin: 0 10px;
+    }
+    .current a {
+      color: black;
+    }
+    .clickable a {
+      color: #C2C2C2;
+    }
+  }
 }

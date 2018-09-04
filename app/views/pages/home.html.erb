@@ -1,10 +1,10 @@
 <div class="services-container">
   <div class="main-header">
     <div class="header-text">
-      <h1>Je vous <em>accompagne</em> dans tous vos projets web<span class="dot">.</span></h1>
-      <p>A la fois développeur web et prestataire de formation, je dispose de tous les outils pour réaliser votre projet web.</p>
+      <h1><%=t(:main_teaser_html)%><span class="dot">.</span></h1>
+      <p><%=t(:second_teaser)%></p>
       <%= link_to "mailto:hello@guillaumecrouillere.fr", target: "blank", class: "get-in-touch" do %>
-        Présentez-moi votre projet
+        <%= t(:brief )%>
       <% end %>
     </div>
   </div>
@@ -14,30 +14,30 @@
       <div class="ecommerce col-xs-12 col-sm-6">
         <%= link_to "#ecommerce", class: "card-link" do %>
           <h2>E-commerce</h2>
-          <p>Application dédiée</p>
-          <p>Déploiement rapide</p>
-          <p>Sur mesure ou standard</p>
+          <p><%=t(:dedicated_app)%></p>
+          <p><%=t(:deploy)%></p>
+          <p><%=t(:custom_or_standard)%></p>
         <% end %>
       </div>
       <div class="training col-xs-12 col-sm-6">
         <%= link_to "#training", class: "card-link" do %>
-          <h2>Formation</h2>
+          <h2><%=t(:training)%></h2>
           <p>Wordpress</p>
           <p>HTML & CSS</p>
-          <p>Référencement</p>
+          <p><%= t(:seo)%></p>
         <% end %>
       </div>
       <div class="show col-xs-12 col-sm-6">
         <%= link_to "#show", class: "card-link" do %>
-          <h2>Site vitrine</h2>
-          <p>Entreprise</p>
+          <h2><%= t(:showcase)%></h2>
+          <p><%= t(:corporation)%></p>
           <p>Landing page</p>
-          <p>Evenement</p>
+          <p><%=t(:event)%></p>
         <% end %>
       </div>
       <div class="apps col-xs-12 col-sm-6">
         <%= link_to "#app", class: "card-link" do %>
-          <h2>Application web</h2>
+          <h2><%=t(:web_app)%></h2>
           <p>Ruby on Rails</p>
           <p>Postgresql</p>
           <p>JS</p>
@@ -53,17 +53,17 @@
   <div class="services-box">
     <div class="services">
       <h2>E-commerce</h2>
-      <p>Grâce à une solution de e-commerce développée spécialement pour les artisans, les auto-entrepreneurs et les TPE/PME, je crée votre e-shop personnalisé.</p>
-      <p>Cette application de boutique en ligne complète a été développée dans une optique de simplicité d'utilisation, pour vous et vos clients.</p>
-      <p>Les atouts de cette application de boutique en ligne : </p>
+      <p><%=t(:thanks_to_ecommerce)%></p>
+      <p><%=t(:this_application)%></p>
+      <p><%=t(:benefits)%></p>
       <ul>
-        <li>Administration simple</li>
-        <li>Paiements par CB et Paypal</li>
-        <li>Transactions sécurisées</li>
-        <li>Personnalisable</li>
-        <li>Compatible mobiles & tablettes</li>
+        <li><%=t(:admin)%></li>
+        <li><%=t(:payment)%></li>
+        <li><%=t(:secured)%></li>
+        <li><%=t(:custom)%></li>
+        <li><%=t(:responsive)%></li>
       </ul>
-      <p>Découvrez toutes les fonctionnalités et des exemples de réalisations sur le site dédié à cette <%= link_to "application de vente en ligne.", "https://www.creermonecommerce.fr/", target: "blank", class: "link-animation" %></p>
+      <p> <%=t(:discover)%> <%= link_to t(:link_content), "https://www.creermonecommerce.fr/", target: "blank", class: "link-animation" %></p>
     </div>
   </div>
 </div>
@@ -73,16 +73,16 @@
   </div>
   <div class="services-box">
     <div class="services">
-      <h2>Formation</h2>
-      <p>Je dispense, dans mes bureaux ou dans vos locaux, une formation vous permmettant de créer un site professionel sous Wordpress. En 4 jours de formation, vous apprenez les fondamentaux qui vous mèneront à la création d'un site personnalisé, pensé pour le référencement et adapté aux mobiles et tablettes.</p>
-      <p>Programme de formation : </p>
+      <h2><%=t(:training).capitalize%></h2>
+      <p><%= t(:training_intro)%></p>
+      <p><%=t(:program)%></p>
       <ul>
-        <li>Jour 1 - Wordpress</li>
-        <li>Jour 2 - Référencement Naturel</li>
-        <li>Jour 3 - HTML & CSS</li>
-        <li>Jour 4 - CSS</li>
+        <li><%= t(:day_1)%></li>
+        <li><%= t(:day_2)%></li>
+        <li><%= t(:day_3)%></li>
+        <li><%= t(:day_4)%></li>
       </ul>
-      <p>La formation est orientée sur la pratique. De nombreux exercices accompagnent chaque chapitre. Vous utilisez ainsi toutes les notions au fur et à mesure qu'elles sont abordées. Ces exercices vous font créer un site exemple, qui sera une base complète de référence pour la création de votre site définitif.</p>
+      <p><%=t(:training_details)%></p>
 <!--       <p>Retrouvez <%= link_to "tous les détails de cette formation ici.", "#", target: "blank", class: "link-animation" %></p> -->
     </div>
   </div>
@@ -93,14 +93,14 @@
   </div>
   <div class="services-box">
     <div class="services">
-      <h2>Site vitrine</h2>
-      <p>Vous recherchez un site vitrine unique, qui mette en valeur votre société, votre offre produit ou un évenement ?</p>
-      <p>De la landing page à la vitrine de votre société, créons ensemble un site web sur mesure qui marquera vos clients.</p>
-      <p>Quelques exemples de réalisations :</p>
+      <h2><%= t(:showcase).capitalize%></h2>
+      <p><%= t(:looking_for)%></p>
+      <p><%=t(:from_landing_page)%></p>
+      <p><%=t(:implementation)%></p>
       <ul>
-        <li>Hélène Raynal, <%= link_to "céramiques contemporaines.", "https://www.heleneraynal.fr/", target: "blank", class: "link-animation" %></li>
-        <li>Ty Morta, <%= link_to "objets d'art en Morta.", "https://tymorta.herokuapp.com/", target: "blank", class: "link-animation" %></li>
-        <li>Sunsuelle, <%= link_to "sacs à main uniques.", "https://sunsuelle.herokuapp.com/", target: "blank", class: "link-animation" %></li>
+        <li>Hélène Raynal, <%= link_to t(:hr_link), "https://www.heleneraynal.fr/", target: "blank", class: "link-animation" %></li>
+        <li>Ty Morta, <%= link_to t(:ty_link), "https://tymorta.herokuapp.com/", target: "blank", class: "link-animation" %></li>
+        <li>Sunsuelle, <%= link_to t(:sun_link), "https://sunsuelle.herokuapp.com/", target: "blank", class: "link-animation" %></li>
       </ul>
     </div>
   </div>
@@ -111,11 +111,11 @@
   </div>
   <div class="services-box">
     <div class="services last-service">
-      <h2>Application web</h2>
-      <p>Vous cherchez un freelance, un collaborateur, un prestataire ou un co-fondateur pour un projet web ? </p>
-      <p>Discutons-en !</p>
-      <p>Je développe actuellement avec Ruby on Rails, Postgresql, SCSS, Javascript, Github et Heroku.</p>
-      <p>Toujours prêt à découvrir de nouveaux outils et environnements.</p>
+      <h2><%=t(:web_app).capitalize%></h2>
+      <p><%t(:looking_for_dev)%></p>
+      <p><%t(:lets_chat)%></p>
+      <p><%= t(:stack)%></p>
+      <p><%=t(:ready)%></p>
       <div class="links">
         <%= link_to "https://www.linkedin.com/in/gcrouillerewebdeveloper", target: "blank" do %>
           <div class="hover-management-linkedin">
