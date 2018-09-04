@@ -17,6 +17,9 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'jquery-rails'
 
+#Poking
+gem 'dynopoker'
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end

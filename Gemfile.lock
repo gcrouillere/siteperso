@@ -60,6 +60,8 @@ GEM
     dotenv-rails (2.5.0)
       dotenv (= 2.5.0)
       railties (>= 3.2, < 6.0)
+    dynopoker (1.3.2)
+      logger
     erubi (1.7.1)
     execjs (2.7.0)
     ffi (1.9.25)
@@ -79,6 +81,7 @@ GEM
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    logger (1.2.8)
     loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -197,6 +200,7 @@ DEPENDENCIES
   bootsnap
   bootstrap-sass (~> 3.3)
   dotenv-rails
+  dynopoker
   font-awesome-sass (~> 5.0.9)
   jbuilder (~> 2.0)
   jquery-rails

@@ -1,0 +1,34 @@
+<div class="parallax">
+  <div id="group1" class="parallax__group">
+    <div class="parallax__layer parallax__layer--base">
+      <div class="title">Base Layer - group 1</div>
+    </div>
+  </div>
+  <div id="group2" class="parallax__group">
+    <div class="parallax__layer parallax__layer--base">
+      <div class="title">Base Layer - group 2</div>
+    </div>
+    <div class="parallax__layer parallax__layer--back">
+      <div class="title">Background Layer - group 2</div>
+    </div>
+  </div>
+</div>
+
+<style>
+.slide-2-container .services {
+    background: #60999b;
+    background-image: linear-gradient(135deg, rgba(96, 153, 155, 0.96), rgba(96, 153, 155, 0.87)), url(<%= image_path "pattern-e-commerce.svg"%>);
+}
+.slide-3-container .services {
+    background: #82a1b2;
+    background-image: linear-gradient(135deg, rgba(130, 161, 178, 0.96), rgba(130, 161, 178, 0.87)), url(<%= image_path "pattern-training.svg"%>);
+}
+.slide-4-container .services {
+    background: #2e5b77;
+    background-image: linear-gradient(135deg, rgba(46, 91, 119, 0.96), rgba(46, 91, 119, 0.87)), url(<%= image_path "pattern-show.svg"%>);
+}
+.slide-5-container .services {
+    background: #1C1B20;
+    background-image: linear-gradient(135deg, rgba(28, 27, 32, 0.96), rgba(28, 27, 32, 0.87)), url(<%= image_path "pattern-app.svg" %>);
+}
+</style>

@@ -90,6 +90,11 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
+  Dynopoker.configure do |config|
+    config.address = 'https://guillaumecrouillere.herokuapp.com'
+    config.poke_frequency = 600 # default is 1800s (30min)
+  end
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
