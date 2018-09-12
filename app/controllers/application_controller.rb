@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   def set_locale
     if params[:change].present? || params[:locale].present?
-      I18n.locale = params[:locale]
+      I18n.locale = params[:locale].scan(/^[a-z]{2}/).first
     else
       locale_trial = extract_locale_from_accept_language_header
       ["fr", "en"].include? locale_trial ? I18n.locale = locale_trial : I18n.locale = "fr"
